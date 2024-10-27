@@ -1,37 +1,58 @@
-@import url("styles/header.css");
-@import url("styles/banner.css");
-@import url("styles/carrossel.css");
-@import url("styles/topicos.css");
-@import url("styles/contato.css");
-@import url("styles/rodapé.css");
-
-:root {
-    --cor-de-fundo: #F7F9FC; /* Um fundo mais claro e suave */
-    --branco: #FFFFFF;
-    --verde: #28A745; /* Verde que remete à saúde */
-    --azul-degrade: linear-gradient(97.54deg, #005B77 35.49%, #66B2C8 165.37%); /* Azul mais relacionado à medicina */
-    --fonte-principal: "Poppins";
-    --azul: #005B77; /* Azul para destacar elementos */
+/* Reset CSS */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li,
+form,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 body {
-    background-color: var(--cor-de-fundo);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--azul); /* Cor do texto padrão */
-    margin: 0;
-    padding: 0;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7F9FC; /* Cor de fundo suave */
+    color: #005B77; /* Cor de texto */
 }
 
 header {
-    background-color: var(--branco);
+    background-color: #FFFFFF; /* Fundo do cabeçalho */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.lista-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.lista-menu a {
+    text-decoration: none;
+    color: #005B77; /* Cor dos links */
 }
 
 .banner {
-    background: var(--azul-degrade);
-    color: var(--branco);
+    background: linear-gradient(97.54deg, #005B77 35.49%, #66B2C8 165.37%);
+    color: #FFFFFF;
     text-align: center;
     padding: 50px 20px;
 }
@@ -43,47 +64,46 @@ header {
     width: 300px;
 }
 
-.carrossel {
+.artigos {
     padding: 20px;
 }
 
-.tópicos {
-    background-color: var(--branco);
-    padding: 20px;
+.artigo {
+    background: #FFFFFF;
+    margin: 10px 0;
+    padding: 15px;
     border-radius: 8px;
-}
-
-.tópicos__lista {
-    list-style: none;
-    padding: 0;
-}
-
-.tópicos__item {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.tópicos__link {
-    text-decoration: none;
-    color: var(--azul);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contato {
-    background-color: var(--branco);
+    background-color: #FFFFFF;
     padding: 20px;
     text-align: center;
 }
 
 .contato__email {
     padding: 10px;
-    border: 1px solid var(--azul);
+    border: 1px solid #005B77;
     border-radius: 5px;
     width: 300px;
 }
 
+.contato__botão {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28A745; /* Verde */
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
 .rodapé {
-    background-color: var(--azul);
-    color: var(--branco);
+    background-color: #005B77;
+    color: #FFFFFF;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
