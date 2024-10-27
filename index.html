@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Anatomia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Farmacologia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Pediatria</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Psiquiatria</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Cirurgia</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da MedBooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Pronto para aprofundar seus conhecimentos?</h2>
+    <p class="banner__texto">Descubra livros que irão transformar sua carreira na medicina!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura médica?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/LivroAnatomia.svg" alt="Livro sobre anatomia"></div>
+        <div class="swiper-slide"><img src="img/LivroFarmacologia.svg" alt="Livro sobre farmacologia"></div>
+        <div class="swiper-slide"><img src="img/LivroPediatria.svg" alt="Livro sobre pediatria"></div>
+        <div class="swiper-slide"><img src="img/LivroCirurgia.svg" alt="Livro sobre cirurgia"></div>
+        <div class="swiper-slide"><img src="img/LivroPsiquiatria.svg" alt="Livro sobre psiquiatria"></div>
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Medicina Interna Avançada</h2>
+          <p class="descrição__texto">
+            Uma abordagem abrangente para diagnósticos e tratamentos.
+          </p>
+        </div>
+        <img src="img/LivroMedicinaInterna.svg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/LivroAnatomia.svg" alt="Livro sobre anatomia"></div>
+        <div class="swiper-slide"><img src="img/LivroFarmacologia.svg" alt="Livro sobre farmacologia"></div>
+        <div class="swiper-slide"><img src="img/LivroPediatria.svg" alt="Livro sobre pediatria"></div>
+        <div class="swiper-slide"><img src="img/LivroCirurgia.svg" alt="Livro sobre cirurgia"></div>
+        <div class="swiper-slide"><img src="img/LivroPsiquiatria.svg" alt="Livro sobre psiquiatria"></div>
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autor do Mês</h3>
+          <h2 class="descrição__titulo-livro">Dr. João Silva</h2>
+          <p class="descrição__texto">Especialista em Cardiologia, Dr. João compartilha suas experiências e conhecimentos.</p>
+        </div>
+        <img src="img/Escritor.svg" class="descrição__imagem">
+      </div>
+
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Cardiologia</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Neurologia</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Oncologia</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Terapia Intensiva</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Emergências</a></li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades médicas!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e mais.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo MedBooks</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>

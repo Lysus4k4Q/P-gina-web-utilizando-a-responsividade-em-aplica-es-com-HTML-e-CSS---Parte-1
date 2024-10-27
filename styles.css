@@ -1,0 +1,89 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #F7F9FC; /* Um fundo mais claro e suave */
+    --branco: #FFFFFF;
+    --verde: #28A745; /* Verde que remete à saúde */
+    --azul-degrade: linear-gradient(97.54deg, #005B77 35.49%, #66B2C8 165.37%); /* Azul mais relacionado à medicina */
+    --fonte-principal: "Poppins";
+    --azul: #005B77; /* Azul para destacar elementos */
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--azul); /* Cor do texto padrão */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--branco);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+    background: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner__pesquisa {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.carrossel {
+    padding: 20px;
+}
+
+.tópicos {
+    background-color: var(--branco);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.tópicos__lista {
+    list-style: none;
+    padding: 0;
+}
+
+.tópicos__item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.tópicos__link {
+    text-decoration: none;
+    color: var(--azul);
+}
+
+.contato {
+    background-color: var(--branco);
+    padding: 20px;
+    text-align: center;
+}
+
+.contato__email {
+    padding: 10px;
+    border: 1px solid var(--azul);
+    border-radius: 5px;
+    width: 300px;
+}
+
+.rodapé {
+    background-color: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    padding: 10px 0;
+}
